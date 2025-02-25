@@ -7,7 +7,7 @@ const ComentarioSchema = new mongoose.Schema({
   fecha: { type: Date, default: Date.now } // Se genera automáticamente si no se proporciona
 });
 
-// 📌 Forzar el uso de la colección "Comments" en MongoDB
+//Forzar el uso de la colección "Comments" en MongoDB
 const Comentario = mongoose.model("Comments", ComentarioSchema, "Comments");
 
 module.exports = Comentario;

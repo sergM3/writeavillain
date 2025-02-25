@@ -7,5 +7,5 @@ const VillanoSchema = new mongoose.Schema({
   derrotado_por: String
 });
 
-const Villano = mongoose.model("Villains", VillanoSchema, "Villains"); // 📌 Forzar el nombre correcto
+const Villano = mongoose.model("Villains", VillanoSchema, "Villains"); //Forzar el nombre correcto
 module.exports = Villano;

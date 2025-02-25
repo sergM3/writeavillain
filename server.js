@@ -17,12 +17,12 @@ mongoose.connect(process.env.MONGO_URI, {
   connectTimeoutMS: 5000,
   serverSelectionTimeoutMS: 5000
 })
-.then(() => console.log("✅ Conectado a MongoDB"))
-.catch(err => console.error("❌ Error al conectar a MongoDB:", err));
+.then(() => console.log("Conectado a MongoDB"))
+.catch(err => console.error("Error al conectar a MongoDB:", err));
 
 // Rutas
-app.use("/api", require("./routes/villanosRoutes")); // 📌 Agregar rutas de villanos
-app.use("/api", require("./routes/comentariosRoutes")); // 📌 Agregar rutas de comentarios
+app.use("/api", require("./routes/villanosRoutes")); // Agregar rutas de villanos
+app.use("/api", require("./routes/comentariosRoutes")); // Agregar rutas de comentarios
 
 
 // Ruta principal
